@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+.calc {
+  background-color: hsl(222deg, 26%, 31%);
+  width: 100%;
+  height: 100vh;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  transition: 1s;
+}
+#fondo.light .calc {
+  background-color: hsl(0deg, 0%, 90%);
+}
+#fondo.dark .calc {
+  background-color: hsl(268deg, 75%, 9%);
+}
+.calc .calc-top {
+  transition: 1s;
+}
+.calc .calc-top h3 {
+  color: hsl(0deg, 0%, 100%);
+}
+#fondo.light .calc .calc-top h3 {
+  color: hsl(60deg, 10%, 19%);
+}
+#fondo.dark .calc .calc-top h3 {
+  color: hsl(52deg, 100%, 62%);
+}
+.calc .calc-top h4 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 15px;
+  margin-top: 5px;
+  text-align: end;
+  transition: 1s;
+}
+#fondo.light .calc .calc-top h4 {
+  color: hsl(60deg, 10%, 19%);
+}
+#fondo.dark .calc .calc-top h4 {
+  color: hsl(52deg, 100%, 62%);
+}
+.calc .calc-top span {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 13px;
+  transition: 1s;
+}
+#fondo.light .calc .calc-top span {
+  color: hsl(60deg, 10%, 19%);
+}
+#fondo.dark .calc .calc-top span {
+  color: hsl(52deg, 100%, 62%);
+}
+.calc .calc-top-result input {
+  background-color: hsl(224deg, 36%, 15%);
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 20px;
+  padding: 17px;
+  text-align: right;
+  font-size: 32px;
+  border-radius: 10px;
+  border: none;
+  transition: 1s;
+}
+#fondo.light .calc .calc-top-result input {
+  background-color: hsl(0deg, 0%, 93%);
+  color: hsl(60deg, 10%, 19%);
+}
+#fondo.dark .calc .calc-top-result input {
+  background-color: hsl(268deg, 71%, 12%);
+  color: hsl(52deg, 100%, 62%);
+}
+.calc .conte {
+  background-color: hsl(223deg, 31%, 20%);
+  border-radius: 10px;
+  padding: 10px;
+  transition: 1s;
+  width: 100%;
+}
+#fondo.light .calc .conte {
+  background-color: hsl(0deg, 5%, 81%);
+  border: 2px solid hsl(45deg, 7%, 89%);
+}
+#fondo.dark .calc .conte {
+  background-color: hsl(268deg, 71%, 12%);
+}
+.calc .col {
+  background-color: hsl(30deg, 25%, 89%);
+  margin: 10px;
+  height: 35px;
+  color: hsl(224deg, 28%, 35%);
+  font-weight: 700;
+  font-size: large;
+  border: 2px solid hsl(30deg, 25%, 89%);
+  border-radius: 5px;
+  box-shadow: 1px 1.5px 1px hsl(28deg, 16%, 65%);
+  transition: 1s;
+}
+#fondo.light .calc .col {
+  background-color: hsl(45deg, 7%, 89%);
+  color: hsl(60deg, 10%, 19%);
+  border: 2px solid hsl(45deg, 7%, 89%);
+  box-shadow: 1px 1.5px 1px hsl(35deg, 11%, 61%);
+}
+#fondo.dark .calc .col {
+  background-color: hsl(268deg, 47%, 21%);
+  color: hsl(52deg, 100%, 62%);
+  border: 2px solid hsl(268deg, 47%, 21%);
+  box-shadow: 1px 1.5px 1px hsl(290deg, 70%, 36%);
+}
+.calc #clean,
+.calc #del {
+  background-color: hsl(225deg, 21%, 49%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 1px 1.5px 1px hsl(224deg, 28%, 35%);
+  border: 2px solid hsl(225deg, 21%, 49%);
+  transition: 1s;
+}
+#fondo.light .calc #clean,
+#fondo.light .calc #del {
+  background-color: hsl(185deg, 42%, 37%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 1px 1.5px 1px hsl(185deg, 58%, 25%);
+  border: 2px solid hsl(185deg, 42%, 37%);
+  transition: 1s;
+}
+#fondo.dark .calc #clean,
+#fondo.dark .calc #del {
+  background-color: hsl(281deg, 89%, 26%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 1px 1.5px 1px hsl(285deg, 91%, 52%);
+  border: 2px solid hsl(281deg, 89%, 26%);
+  transition: 1s;
+}
+.calc #clean {
+  font-size: 13px;
+  padding: 0 3%;
+}
+.calc #equal {
+  background-color: hsl(6deg, 63%, 50%);
+  color: hsl(30deg, 25%, 89%);
+  box-shadow: 1px 1.5px 1px hsl(6deg, 70%, 34%);
+  border: 2px solid hsl(6deg, 63%, 50%);
+  transition: 1s;
+}
+#fondo.light .calc #equal {
+  background-color: hsl(25deg, 98%, 40%);
+  color: hsl(45deg, 7%, 89%);
+  box-shadow: 1px 1.5px 1px hsl(25deg, 99%, 27%);
+  border: 2px solid hsl(25deg, 98%, 40%);
+}
+#fondo.dark .calc #equal {
+  background-color: hsl(176deg, 100%, 44%);
+  color: hsl(268deg, 47%, 21%);
+  box-shadow: 1px 1.5px 1px hsl(177deg, 92%, 70%);
+  border: 2px solid hsl(176deg, 100%, 44%);
+}
+.calc .col:hover {
+  background-color: hsl(224deg, 28%, 35%);
+  border: 2px solid hsl(30deg, 25%, 89%);
+  color: hsl(0deg, 0%, 100%);
+  transition: 0.5s;
+}
+#fondo.light .calc .col:hover {
+  background-color: hsl(185deg, 58%, 25%);
+  border: 2px solid hsl(45deg, 7%, 89%);
+  color: hsl(0deg, 0%, 100%);
+}
+#fondo.dark .calc .col:hover {
+  background-color: hsl(285deg, 91%, 52%);
+  border: 2px solid hsl(268deg, 47%, 21%);
+  color: hsl(198deg, 20%, 13%);
+}
+.calc #clean:hover,
+.calc #del:hover {
+  background-color: hsla(0deg, 0%, 100%, 0);
+  border: 2px solid hsl(225deg, 21%, 49%);
+  color: hsl(225deg, 21%, 49%);
+  transition: 0.5s;
+}
+#fondo.light .calc #clean:hover,
+#fondo.light .calc #del:hover {
+  background-color: hsl(185deg, 58%, 25%);
+  border: 2px solid hsl(185deg, 42%, 37%);
+  color: hsl(185deg, 42%, 37%);
+}
+#fondo.dark .calc #clean:hover,
+#fondo.dark .calc #del:hover {
+  background-color: hsl(285deg, 91%, 52%);
+  border: 2px solid hsl(281deg, 89%, 26%);
+  color: hsl(281deg, 89%, 26%);
+}
+.calc #equal:hover {
+  background-color: hsla(0deg, 0%, 100%, 0);
+  border: hsl(6deg, 63%, 50%);
+  color: hsl(6deg, 63%, 50%);
+  transition: 0.5;
+}
+#fondo.light .calc #equal:hover {
+  background-color: hsl(25deg, 98%, 40%);
+  border: hsl(25deg, 98%, 40%);
+  color: hsl(25deg, 98%, 40%);
+}
+#fondo.dark .calc #equal:hover {
+  background-color: hsl(176deg, 100%, 44%);
+  border: hsl(176deg, 100%, 44%);
+  color: hsl(176deg, 100%, 44%);
+}
+.calc .toggle {
+  background-color: hsl(223deg, 31%, 20%);
+  border-radius: 25px;
+  height: 25px;
+  padding: 0 6px;
+  transition: 1s;
+}
+#fondo.light .calc .toggle {
+  background-color: hsl(0deg, 5%, 81%);
+}
+#fondo.dark .calc .toggle {
+  background-color: hsl(268deg, 71%, 12%);
+}
+.calc .toggle input {
+  width: 100%;
+}
+
+@media (max-width: 375px) {
+  .calc {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

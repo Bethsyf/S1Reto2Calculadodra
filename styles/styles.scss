@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+// Tema 1
+
+$mainB1: hsl(222, 26%, 31%);
+$toggleB-keypadB1: hsl(223, 31%, 20%);
+$screenB1: hsl(224, 36%, 15%);
+$keyB1a: hsl(225, 21%, 49%);
+$keyS1a: hsl(224, 28%, 35%);
+$keyB1b: hsl(6, 63%, 50%);
+$keyS1b: hsl(6, 70%, 34%);
+$keyB1c: hsl(30, 25%, 89%);
+$keyS1c: hsl(28, 16%, 65%);
+$text1a: hsl(221, 14%, 31%);
+$text1b: hsl(0, 0%, 100%);
+
+// Tema 2 light
+
+$mainB2: hsl(0, 0%, 90%);
+$toggleB-keypadB2: hsl(0, 5%, 81%);
+$screenB2: hsl(0, 0%, 93%);
+$keyB2a: hsl(185, 42%, 37%);
+$keyS2a: hsl(185, 58%, 25%);
+$keyB2b: hsl(25, 98%, 40%);
+$keyS2b: hsl(25, 99%, 27%);
+$keyB2c: hsl(45, 7%, 89%);
+$keyS2c: hsl(35, 11%, 61%);
+$text2a: hsl(60, 10%, 19%);
+$text2b: hsl(0, 0%, 100%);
+
+//Tema 3 dark
+
+$mainB3: hsl(268, 75%, 9%);
+$toggleB-keypadB3: hsl(268, 71%, 12%);
+$screenB3: hsl(268, 71%, 12%);
+$keyB3a: hsl(281, 89%, 26%);
+$keyS3a: hsl(285, 91%, 52%);
+$keyB3b: hsl(176, 100%, 44%);
+$keyS3b: hsl(177, 92%, 70%);
+$keyB3c: hsl(268, 47%, 21%);
+$keyS3c: hsl(290, 70%, 36%);
+$text3a: hsl(52, 100%, 62%);
+$text3b: hsl(198, 20%, 13%);
+$text3c: hsl(0, 0%, 100%);
+
+
+.calc {
+  background-color: $mainB1;
+  width: 100%;
+  height: 100vh;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  transition: 1s;
+
+  #fondo.light & {
+    background-color: $mainB2;
+  }
+
+  #fondo.dark & {
+    background-color: $mainB3;
+  }
+
+
+  .calc-top {
+    transition: 1s;
+
+    h3 {
+      color: $text1b;
+
+      #fondo.light & {
+        color: $text2a;
+      }
+
+      #fondo.dark & {
+        color: $text3a;
+      }
+    }
+
+    h4 {
+      color: $text1b;
+      font-size: 15px;
+      margin-top: 5px;
+      text-align: end;
+      transition: 1s;
+
+      #fondo.light & {
+        color: $text2a;
+      }
+
+      #fondo.dark & {
+        color: $text3a;
+      }
+    }
+
+    span {
+      color: $text1b;
+      font-size: 13px;
+      transition: 1s;
+
+      #fondo.light & {
+        color: $text2a;
+      }
+
+      #fondo.dark & {
+        color: $text3a;
+      }
+    }
+  }
+
+  .calc-top-result {
+    input {
+      background-color: $screenB1;
+      color: $text1b;
+      margin-bottom: 20px;
+      padding: 17px;
+      text-align: right;
+      font-size: 32px;
+      border-radius: 10px;
+      border: none;
+      transition: 1s;
+
+      #fondo.light & {
+        background-color: $screenB2;
+        color: $text2a;
+      }
+
+      #fondo.dark & {
+        background-color: $screenB3;
+        color: $text3a;
+      }
+    }
+  }
+
+  .conte {
+    background-color: $toggleB-keypadB1;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 1s;
+    width: 100%;
+
+    #fondo.light & {
+      background-color: $toggleB-keypadB2;
+    }
+
+    #fondo.dark & {
+      background-color: $toggleB-keypadB3;
+    }
+  }
+
+  .col {
+    background-color: $keyB1c;
+    margin: 10px;
+    height: 35px;
+    color: $keyS1a;
+    font-weight: 700;
+    font-size: large;
+    border: 2px solid $keyB1c;
+    border-radius: 5px;
+    box-shadow: 1px 1.5px 1px $keyS1c;
+    transition: 1s;
+
+    #fondo.light & {
+      background-color: $keyB2c;
+      color: $text2a;
+      border: 2px solid $keyB2c;
+      box-shadow: 1px 1.5px 1px $keyS2c;
+    }
+
+    #fondo.dark & {
+      background-color: $keyB3c;
+      color: $text3a;
+      border: 2px solid $keyB3c;
+      box-shadow: 1px 1.5px 1px $keyS3c;
+    }
+  }
+
+  #clean,
+  #del {
+    background-color: $keyB1a;
+    color: $text1b;
+    box-shadow: 1px 1.5px 1px $keyS1a;
+    border: 2px solid $keyB1a;
+    transition: 1s;
+
+    #fondo.light & {
+      background-color: $keyB2a;
+      color: $text2b;
+      box-shadow: 1px 1.5px 1px $keyS2a;
+      border: 2px solid $keyB2a;
+      transition: 1s;
+    }
+
+    #fondo.dark & {
+      background-color: $keyB3a;
+      color: $text3c;
+      box-shadow: 1px 1.5px 1px $keyS3a;
+      border: 2px solid $keyB3a;
+      transition: 1s;
+    }
+  }
+
+  #clean {
+    font-size: 13px;
+    padding: 0 3%;
+  }
+
+  #equal {
+    background-color: $keyB1b;
+    color: $keyB1c;
+    box-shadow: 1px 1.5px 1px $keyS1b;
+    border: 2px solid $keyB1b;
+    transition: 1s;
+
+    #fondo.light & {
+      background-color: $keyB2b;
+      color: $keyB2c;
+      box-shadow: 1px 1.5px 1px $keyS2b;
+      border: 2px solid $keyB2b;
+    }
+
+    #fondo.dark & {
+      background-color: $keyB3b;
+      color: $keyB3c;
+      box-shadow: 1px 1.5px 1px $keyS3b;
+      border: 2px solid $keyB3b;
+    }
+  }
+
+  .col:hover {
+    background-color: $keyS1a;
+    border: 2px solid $keyB1c;
+    color: $text1b;
+    transition: 0.5s;
+
+    #fondo.light & {
+      background-color: $keyS2a;
+      border: 2px solid $keyB2c;
+      color: $text2b;
+    }
+
+    #fondo.dark & {
+      background-color: $keyS3a;
+      border: 2px solid $keyB3c;
+      color: $text3b;
+    }
+  }
+
+  #clean:hover,
+  #del:hover {
+    background-color: hsla(0, 0%, 100%, 0);
+    border: 2px solid $keyB1a;
+    color: $keyB1a;
+    transition: 0.5s;
+
+    #fondo.light & {
+      background-color: $keyS2a;
+      border: 2px solid $keyB2a;
+      color: $keyB2a;
+
+    }
+
+    #fondo.dark & {
+      background-color: $keyS3a;
+      border: 2px solid $keyB3a;
+      color: $keyB3a;
+    }
+  }
+
+  #equal:hover {
+    background-color: hsla(0, 0%, 100%, 0);
+    border: $keyB1b;
+    color: $keyB1b;
+    transition: 0.5;
+
+    #fondo.light & {
+      background-color: $keyB2b;
+      border: $keyB2b;
+      color: $keyB2b;
+    }
+
+    #fondo.dark & {
+      background-color: $keyB3b;
+      border: $keyB3b;
+      color: $keyB3b;
+    }
+  }
+
+  .toggle {
+    background-color: $toggleB-keypadB1;
+    border-radius: 25px;
+    height: 25px;
+    padding: 0 6px;
+    transition: 1s;
+
+    #fondo.light & {
+      background-color: $toggleB-keypadB2;
+    }
+
+    #fondo.dark & {
+      background-color: $toggleB-keypadB3;
+    }
+  }
+
+  .toggle input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .calc {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+  }
+}
